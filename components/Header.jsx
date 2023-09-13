@@ -34,13 +34,13 @@ const Header = () => {
               <>
                 <Link
                   href="/dashboard"
-                  className="text-grey-300 hover:text-white mr-4'"
+                  className="text-grey-300 hover:text-white mr-4"
                 >
                   Dashboard
                 </Link>
                 <Link
                   href="/profile"
-                  className="text-grey-300 hover:text-white mr-4'"
+                  className="text-grey-300 hover:text-white mr-4"
                 >
                   Profile
                 </Link>
