@@ -11,7 +11,7 @@ const Courses = async ({ courses }) => {
           <Link
             href={course.link}
             target="_blank"
-            className="py-2 px-4 bg-blue-700 hover:bg-blue-800 text-white rounded-lg mb-4"
+            className="py-2 px-4 bg-blue-600 hover:bg-blue-800 text-white rounded-lg mb-4"
           >
             Go To Course
           </Link>
