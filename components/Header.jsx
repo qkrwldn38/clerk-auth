@@ -1,6 +1,5 @@
 import { UserButton, auth } from '@clerk/nextjs'
 import Link from 'next/link'
-import React from 'react'
 
 const Header = () => {
   const { userId } = auth()
@@ -14,6 +13,7 @@ const Header = () => {
               <div className="text-lg text-white">Clerk Auth</div>
             </Link>
           </div>
+
           <div className="flex items-center font-bold">
             {!userId ? (
               <>
@@ -21,26 +21,38 @@ const Header = () => {
                   href="/sign-in"
                   className="text-gray-300 hover:text-white mr-4"
                 >
-                  Sign in
+                  Sign In
                 </Link>
                 <Link
                   href="/sign-up"
                   className="text-gray-300 hover:text-white mr-4"
                 >
-                  Sign up
+                  Sign Up
                 </Link>
               </>
             ) : (
               <>
                 <Link
+                  href="/repos"
+                  className="text-gray-300 hover:text-white mr-4"
+                >
+                  Repos
+                </Link>
+                <Link
+                  href="/courses"
+                  className="text-gray-300 hover:text-white mr-4"
+                >
+                  Courses
+                </Link>
+                <Link
                   href="/dashboard"
-                  className="text-grey-300 hover:text-white mr-4"
+                  className="text-gray-300 hover:text-white mr-4"
                 >
                   Dashboard
                 </Link>
                 <Link
                   href="/profile"
-                  className="text-grey-300 hover:text-white mr-4"
+                  className="text-gray-300 hover:text-white mr-4"
                 >
                   Profile
                 </Link>
@@ -55,5 +67,4 @@ const Header = () => {
     </>
   )
 }
-
 export default Header
